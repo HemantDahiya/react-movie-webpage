@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+body{
+  background-color: black;
+  padding:0px;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#line{
+  height:1px ;
+  background-color:white;
+  margin-top:50px;
+  margin-bottom:20px;
+  position:relative;
+  z-index: -1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#line-text{
+  background-color: black;
+  position: absolute;
   color: white;
+  top: -13px;
+  margin: 0;
+  left: 60px;
 }
 
-.App-link {
-  color: #61dafb;
+#Container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Card-container{
+  position: relative;
+  width: 200px;
+  margin: 20px;
+  
+}
+
+.Card-container img{
+  width: 100%;
+  
+}
+
+.Content{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top:0;
+
+}
+
+#text-deco{
+  
+  visibility: hidden;
+  position: relative;
+  top: 50%;
+  background-color: rgba(0, 0, 0,0.7);
+  text-align: center;
+  color: rgb(245, 237, 237);
+  font-weight: 700;
+}
+
+.Content:hover #text-deco{
+  visibility: visible;
+}
+
+
+#text-deco p{
+  margin: 0;
 }
